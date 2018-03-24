@@ -1,0 +1,44 @@
+{
+  "name": "react-sample",
+  "version": "1.0.0",
+  "description": "for developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-d": "webpack --mode development",
+    "build-p": "webpack --mode production",
+    "dev": "webpack-dev-server --hot --inline --mode development"
+  },
+  "keywords": [],
+  "author": "@kazuaki_p",
+  "repository": "for react developer",
+  "license": "ISC",
+  "dependencies": {
+    "mobx": "^4.1.0",
+    "mobx-react": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-google-maps": "^9.4.5",
+    "react-redux": "^5.0.7",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "^3.30.8",
+    "@types/markerclustererplus": "^2.1.33",
+    "@types/react": "^16.0.40",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "react-virtualized": "^9.18.5",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
