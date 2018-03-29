@@ -6,9 +6,9 @@ node.jsインストールし、起動。npmであれば以下の通り。
 
 npm install
 
-npm run dev
+npm run storybook
 
 
 ```
 
-http://localhost:8080/
+http://localhost:6006/

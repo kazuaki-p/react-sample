@@ -14,8 +14,6 @@ class App extends React.Component {
   }
   componentWillMount() {
 
-    console.log(this.props.actions)
-
     this.props.actions.fetchData();
 
   }
