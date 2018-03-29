@@ -4,7 +4,7 @@ import {observer} from 'mobx-react'
 
 const fetchApiData = () => {
 　　　　// url部分は変えてね。
-　　　　return　fetch('https://api.cightning.com/', {credentials: 'include'})
+　　　　return　fetch('http://localhost:3000/example/a', {credentials: 'same-origin'})
 　　　　　　　　　　　　　　　　　　　　　.then(response => {
 　　　　　　　　　　　　　　　　　　　　　　　　　if (response.status < 400) {
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　return response.json().then((json)=>{appState.fetchData=json});

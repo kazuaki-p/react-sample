@@ -48,9 +48,11 @@ class App extends React.Component {
                     label={'タイトル'}
                     width={120}
                     height={30} />
-            <Column label={'編集'}
+            <Column dataKey={'modify'}
+                    label={'編集'}
                     cellRenderer={({rowData}) => <a href="#">{JSON.stringify(rowData)}</a> }
                     flexGrow={1}
+                    width={120}
                     height={30} />
           </Table>)}
       </AutoSizer>

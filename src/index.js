@@ -1,7 +1,13 @@
 
-//import reactSample from './mobxSample/index.jsx';
-//import reactSample from './reduxSample/index.jsx';
-//import reactSample from './dataTableSample/index.jsx';
-import reactSample from './googleMapSample/index.jsx';
+//import TemplateMobx from './template-mobx/index.jsx';
+//import TemplateRedux from './template-redux/index.jsx';
+//import SampleDataTable from './sample-data-table/index.jsx';
+import SampleGoogleMap from './sample-google-map/index.jsx';
 
-export { reactSample }
+export { 
+    /*
+    TemplateMobx, 
+    TemplateRedux, 
+    SampleDataTable, 
+    */
+    SampleGoogleMap  }

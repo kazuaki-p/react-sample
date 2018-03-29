@@ -1,16 +1,15 @@
+// you can use this file to add your custom webpack plugins, loaders and anything you like.
+// This is just the basic way to add additional webpack configurations.
+// For more information refer the docs: https://storybook.js.org/configurations/custom-webpack-config
+
+// IMPORTANT
+// When you add this file, we won't add the default configurations which is similar
+// to "React Create App". This only has babel loader to load JavaScript.
+
 module.exports = {
-  context: __dirname,
-  entry: './src/index.js',
-  output: {
-    path: __dirname,
-    filename: 'bundle.js',
-    library: 'Trial',
-    libraryTarget: 'umd'
-  },
-  //devtool: 'source-map',
-  resolve: {
-    extensions: [ '.js', 'jsx', '.json', '.css' ]
-  },
+  plugins: [
+    // your custom plugins
+  ],
   module: {
     rules: [
       /*
@@ -35,14 +34,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query:{
-          presets:['es2015','react','env'],
+          presets:['react'],
           plugins: ["transform-decorators-legacy", "transform-class-properties"]
         }
       }
     ]
   },
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM",
-  }
-}
+};
